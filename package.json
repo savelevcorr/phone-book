@@ -1,0 +1,15 @@
+{
+  "name": "phone-book",
+  "version": "1.0.0",
+  "description": "Simple phone book",
+  "main": "/app/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "phone",
+    "contacts"
+  ],
+  "author": "Andrey Savelyev",
+  "license": "MIT"
+}
