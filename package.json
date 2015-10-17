@@ -11,5 +11,9 @@
     "contacts"
   ],
   "author": "Andrey Savelyev",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "npm": "^3.3.8"
+  }
 }
