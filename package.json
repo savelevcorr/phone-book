@@ -13,7 +13,18 @@
   "author": "Andrey Savelyev",
   "license": "MIT",
   "devDependencies": {
+    "express": "^3.1.0",
     "gulp": "^3.9.0",
-    "npm": "^3.3.8"
+    "gulp-concat": "^2.6.0",
+    "gulp-plumber": "^1.0.1",
+    "mongoose": "^3.5.5",
+    "npm": "^3.3.8",
+    "path": "^0.4.9"
+  },
+  "dependencies": {
+    "express": "^3.1.0",
+    "mysql": "^2.9.0",
+    "path": "^0.4.9",
+    "sequelize": "^3.12.1"
   }
 }
