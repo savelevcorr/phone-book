@@ -1,3 +1,6 @@
 {
-	"name": "phone-book"
+  "name": "phone-book",
+  "dependencies": {
+    "backbone": "~1.2.3"
+  }
 }
