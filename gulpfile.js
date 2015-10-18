@@ -11,24 +11,13 @@ var gulp     = require('gulp'),
 
 gulp.task('default', ['connect', 'watch']);
 
-
-/*gulp.task('default', function () {
-    return gulp.src([
-    		'./src/vendor/jquery/dist/jquery.min.js',
-    		'src/vendor/underscore/underscore-min.js',
-    		'src/vendor/bootstrap/dist/js/bootstrap.min.js',
-    		'src/vendor/backbone/backbone-min.js'
-    	])
-    .pipe(concat('common.js'))
-    .pipe(gulp.dest('./app/js/'));
-});*/
-
 // Concat js
 gulp.task('concat', function(){
 	return gulp.src([
           './src/vendor/jquery/dist/jquery.min.js',
           './src/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js',
-	    		'./src/vendor/moment/moment.js',
+          './src/vendor/jquery.kladr/jquery.kladr.min.js',
+	    		'./src/vendor/moment/min/moment-with-locales.min.js',
 	    		'src/vendor/underscore/underscore-min.js',
 	    		'src/vendor/bootstrap/dist/js/bootstrap.min.js',
 	    		'src/vendor/backbone/backbone-min.js'

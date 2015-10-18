@@ -16,7 +16,10 @@ app.BookView = Backbone.View.extend({
 		// tmpl – это функция, которая принимает JSON-объект и возвращает html
 		// мы определили this.el в tagName. Используйте $el для доступа
 		// к jQuery-функции html()
-		this.$el.html( this.template( this.model.toJSON() ));
+		var userInfo = this.model.toJSON();
+		var time = moment( userInfo.birthday );
+		userInfo.birthday = time.format('L');
+		this.$el.html( this.template( userInfo ));
 		return this;
 	}
 });

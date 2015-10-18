@@ -61,7 +61,7 @@ app.post( '/api/contacts', function( request, response ) {
 	    	city: request.body.city,
 	    	street: request.body.street,
 	    	phone: request.body.phone,
-	    	birthday: request.body.birthday
+	    	birthday: new Date(request.body.birthday).getTime()
 		});
 	}).then(function( newUser ) {
 		return response.send( newUser );

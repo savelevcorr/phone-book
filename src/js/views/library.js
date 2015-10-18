@@ -12,7 +12,12 @@ app.LibraryView = Backbone.View.extend({
 		var formData = {};
 		$('#addContact input').each(function (i, el) {
 			if( $(el).val() !== '' ) {
-				formData[el.id] = $(el).val();
+				
+				if( el.id === 'birthday' ) {
+					formData[ el.id ] = new Date( $(el).val() ).getTime();
+				} else {
+					formData[el.id] = $(el).val();
+				}
 			}
 			$(this).val('');
 		});
