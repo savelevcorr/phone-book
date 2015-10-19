@@ -17,10 +17,12 @@ Modernizr.load({
                 autoclose: true
             });
 
+	    // Получаем списко городов при вводе первых букв
             $('#city').kladr({
                 token: '5623b69e0a69de320f8b45fa',
                 type: $.kladr.type.city,
-
+                 
+                 // Получаем список улиц в выбраном городе
                 select: function( obj ){
                     $('#street').kladr({
                         parentId: obj.id,
