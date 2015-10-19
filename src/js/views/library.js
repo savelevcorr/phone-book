@@ -33,15 +33,12 @@ app.LibraryView = Backbone.View.extend({
 		this.listenTo( this.collection, 'reset', this.render );
 	},
 
-	// отображение библиотеки посредством вывода каждой книги из коллекции
 	render: function() {
 		this.collection.each(function( item ) {
 			this.renderBook( item );
 		}, this );
 	},
 
-	// отображение книги с помощью создания представления BookView
-	// и добавления отображаемого элемента в элемент библиотеки
 	renderBook: function( item ) {
 		var bookView = new app.BookView({
 			model: item
