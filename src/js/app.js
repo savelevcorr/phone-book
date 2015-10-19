@@ -19,8 +19,6 @@ Modernizr.load({
 
             var cityId;
 
-            console.log($.kladr.type);
-
             $('#city').kladr({
                 token: '5623b69e0a69de320f8b45fa',
                 type: $.kladr.type.city,
